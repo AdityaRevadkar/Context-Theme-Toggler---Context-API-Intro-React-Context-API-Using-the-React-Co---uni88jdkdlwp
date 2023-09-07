@@ -4,11 +4,7 @@ import { ThemeContext } from "./ThemeProvider";
 
 
 const LocalThemedBox = () => {
-
-return(
-    <div style={{width:'200px',height:'200px',border:'2px solid green'}} id="local-themed-box">
-        {/* Write code below this line */}
-      const contextVal = useContext(ThemeContext);
+       const contextVal = useContext(ThemeContext);
 
   const { theme } = contextVal;
 
@@ -19,6 +15,11 @@ return(
     setLocalTheme(theme);
   }, [theme]);
 
+
+return(
+    <div style={{width:'200px',height:'200px',border:'2px solid green'}} id="local-themed-box">
+        {/* Write code below this line */}
+   
   <p className={`txt-${localTheme}`} id="local-theme-text-container">
         Hii
       </p>
