@@ -9,7 +9,10 @@ const Page = () => {
             <p id="themed-text-container">
                 lorem ipsum dolor iterit n stuff
             </p>
-            <button className="btn" id="themed-button">Themed Button</button>
+          <button className="btn" id="themed-button">
+        sup
+      </button>
+            
             <LocalThemedBox />
         </div>
     )
